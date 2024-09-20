@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-de-fundo: #EFEEF3;
+    --fonte-principal: "Kodchasan", sans-serif;
+}
+
+body {
+    width: 100%;
+
+    @media (max-width: 400px) {
+        max-width: 400px;
+
+    }
+}
+
+
+header {
+    display: flex;
+    width: 100%;
+    height: 2.6em;
+    align-items: center;
+    background-color: var(--cor-de-fundo);
+    z-index: 99;
+    position: fixed;
+
+
+
+
+    .logoLoreal {
+        width: 9vw;
+        height: 5vh;
+        margin-left: 1em;
+    }
+
+    ul {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 1em;
+        gap: 1em;
+
+        li {
+            display: flex;
+            text-decoration: none;
+            list-style: none;
+            font-family: var(--fonte-principal);
+            font-size: 0.8rem;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            color: #000000;
+           
+            
+        }
+
+
+    }
+
+  
+
+
+    @media (max-width: 400px) {
+        display: flex;
+        max-width: 400px;
+        flex-direction: column;
+        align-items: center;
+        height: 50vh;
+        width: 100%;
+        position: unset;
+
+
+
+
+        figure {
+            display: flex;
+            flex-direction: column;
+
+
+
+            .logoLoreal {
+                display: flex;
+                height: 15vh;
+                width: 40vw;
+
+            }
+        }
+
+
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 2em 0 0 0;
+
+
+            li {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2em;
+
+
+                font-size: 1.3rem;
+                align-items: center;
+                justify-content: center;
+
+
+            }
+
+
+
+        }
+
+    }
+
+}
+
+main {
+    width: 100%;
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+
+    img {
+        width: 100%;
+    }
+
+    @media (max-width:400px) {
+
+        margin-top: -12em;
+
+        .bannerLoreal {
+            display: none;
+        }
+
+    }
+
+
+}
+
+.conteudoMain1 {
+    background-color: var(--cor-de-fundo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 3em 2em;
+    gap: 4em;
+
+    img {
+        width: 30vw;
+        height: 45vh;
+    }
+
+    div {
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        text-align: center;
+    }
+
+    @media (max-width: 400px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 60% 0 0 0;
+        text-align: center;
+
+        figure {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+
+        }
+
+        .mulherLoreal {
+            width: 80vw;
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        div {
+            width: 85%;
+        }
+
+    }
+
+}
+
+.conteudoMain2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 4em;
+
+
+    p {
+        width: 50vw;
+        font-weight: 400;
+        font-size: 1.5em;
+    }
+
+    figure {
+        display: flex;
+        gap: 2.5em;
+
+
+        img {
+            width: 7vw;
+            height: 38vh;
+        }
+    }
+
+    @media (max-width: 400px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            align-items: center;
+            justify-content: center;
+            padding: 1em 0 0 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        figure {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 4em 0 0 0;
+
+            img {
+                width: 25vw;
+            }
+        }
+
+
+    }
+}
